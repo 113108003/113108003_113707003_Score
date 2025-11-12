@@ -13,5 +13,9 @@ count = 0  # 計數用，紀錄不及格的人數
 for s in scores:
     if int(s) < 60:      # 轉成整數後判斷是否不及格
         count += 1
+scores = input().split()       # 以空格分開每個成績
+nums = [int(s) for s in scores]  # 把每個字串成績轉成整數
 
+print(max(nums))   # 輸出最大值
+print(min(nums))   # 輸出最小值
 print(count)
